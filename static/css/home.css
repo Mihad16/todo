@@ -1,0 +1,53 @@
+.heading {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1e1e1e; 
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heading h1 {
+    color: #00ffff; 
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.heading p {
+    color: #ccc;
+    font-size: 18px;
+}
+.heading input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    margin-top: 20px;
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: white;
+    outline: none;
+}
+
+.heading input::placeholder {
+    color: #aaa;
+}
+
+.heading button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.heading button:hover {
+    background-color: #00cccc;
+}
+

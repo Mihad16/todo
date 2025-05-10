@@ -1,0 +1,22 @@
+.about-section {
+    margin: 50px auto;
+    width: 80%;
+    padding: 30px;
+    background-color: #2a2a2a;
+    color: #eee;
+    border-left: 5px solid #00ffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-section h2 {
+    margin-bottom: 15px;
+    color: #00ffff;
+    font-size: 28px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}

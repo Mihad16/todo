@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #1e1e1e; 
+   border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content:flex-end;
+  
+
+
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: azure;
+}

@@ -1,0 +1,28 @@
+{% extends "Navbar.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/task.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="about-section">  
+    <h2>Task List</h2>
+    <p>These are your current ToDo items:</p>
+
+    {% for d in datas %}
+    <div class="backoro">
+        <h3 class="title">
+            <input type="checkbox" class="task-checkbox" {% if d.completed %}checked{% endif %}>  
+            {{ d.task }}
+        </h3>  
+        <div class="btn-group">
+            <a href="" class="btn edit-btn">Edit</a>
+            <a href="" class="btn delete-btn">Delete</a>
+        </div>
+    </div>
+    {% empty %}
+    <p>No tasks added yet.</p>
+    {% endfor %}
+</div>
+{% endblock %}

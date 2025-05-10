@@ -1,0 +1,98 @@
+.about-section {
+    margin: 50px auto;
+    width: 80%;
+    padding: 30px;
+    background-color: #2a2a2a;
+    color: #eee;
+    border-left: 5px solid #00ffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-section h2 {
+    margin-bottom: 15px;
+    color: #00ffff;
+    font-size: 28px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.backoro {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-left: 4px solid #00ffff;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 255, 255, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.backoro:hover {
+    transform: scale(1.02);
+}
+
+.title {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* ===== Buttons ===== */
+.btn-group {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.edit-btn {
+    background-color: transparent;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: #ff4b4b;
+    border: 1px solid #ff4b4b;
+}
+
+.edit-btn:hover {
+    background-color: #00ffff;
+    color: #000;
+}
+
+.delete-btn:hover {
+    background-color: #ff4b4b;
+    color: #fff;
+}
+
+/* ===== Task Checkbox (Tick/Mark Done) ===== */
+.task-checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.task-checkbox:checked {
+    background-color: #00ffff;
+    color: #00ffff;
+    text-decoration: line-through;
+}
+
+.task-checkbox:checked + .title {
+    text-decoration: line-through;
+}
