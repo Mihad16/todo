@@ -14,6 +14,12 @@ def Todo(request):
 def task(request):
     data=Task.objects.all()
     return render(request, 'task.html',{'datas':data})
+
+def delete(request,pk):
+    data=Task.objects.get(pk=pk)
+    data.delete()
+    data = Task.objects.all() 
+    return render(request, 'task.html',{'datas':data})
   
 
 
