@@ -23,7 +23,16 @@ def delete(request,pk):
 
 def edit(request,pk):
     edited_data=Task.objects.get(pk=pk)
-    data=TaskForm(instance=edited_data)
+    if request.method == 'POST':
+       data=TaskForm(request.POST,instance=edited_data)
+       if data.is_valid():
+          data.save()
+          return redirect('home')  
+
+    else:
+        data = TaskForm(instance=edited_data)
+
+
     return render(request, 'Home.html',{'frm':data})
   
 
