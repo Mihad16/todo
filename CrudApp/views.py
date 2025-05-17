@@ -20,10 +20,12 @@ def delete(request,pk):
     data.delete()
     data = Task.objects.all() 
     return render(request, 'task.html',{'datas':data})
+
+def edit(request,pk):
+    edited_data=Task.objects.get(pk=pk)
+    data=TaskForm(instance=edited_data)
+    return render(request, 'Home.html',{'frm':data})
   
-
-
-
 
 
 def about(request):
